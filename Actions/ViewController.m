@@ -8,6 +8,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *Text;
 
 @end
 
@@ -18,5 +19,8 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)greetUser:(id)sender {
+    [_Text setText:@"HiBabeeeee"];
+}
 
 @end
